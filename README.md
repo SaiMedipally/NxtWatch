@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-In this project, let's build **Nxt Watch** by applying the concepts we have learned till now.
-
-### Refer to the videos below:
-
-**Success View** <br/>
-
-<div style="text-align: center;">
-     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
-**Failure View** <br/>
-
-<div style="text-align: center;">
-    <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
 ### Design Files
 
 <details>
@@ -139,7 +116,7 @@ In this project, let's build **Nxt Watch** by applying the concepts we have lear
 <summary>Functionality to be added</summary>
 <br/>
 
-The app must have the following functionalities
+The app have the following functionalities
 
 - Initially, the app should be in **Light** theme
 
@@ -452,83 +429,7 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 
 <br/>
 
-**The following instructions are required for the tests to pass**
-
-- Render `Home` Route component when the path in URL matches `/`
-- Render `Login` Route component when the path in URL matches `/login`
-- Render `Trending` Route component when the path in URL matches `/trending`
-- Render `Gaming` Route component when the path in URL matches `/gaming`
-- Render `Saved Videos` Route component when the path in URL matches `/saved-videos`
-- Render `Video Item Details` Route component when the path in URL matches `/videos/:id`
-- Render `Not Found` Route component when the path in URL matches `/not-found`
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
-- User credentials
-
-  ```text
-   username: rahul
-   password: rahul@2021
-
-  ```
-
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as **loader** to it
-
-  ```jsx
-  <div className="loader-container" data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-  </div>
-  ```
-
-- The HTML button element with search icon in Home Route should have the `data-testid` attribute value as **searchButton** to it
-
-- **Styled Components** should be used for styling purposes
-- The theme icon button should have the `data-testid` as **theme**
-- The video thumbnail images in the Routes should have the alt as **video thumbnail**
-- The channel logos in Home Route should have the alt as **channel logo**
-
-- **Home Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **home**
-  - The Route should consist of a banner and it contains a close button with `data-testid` as **close**
-  - The Route should consist of a banner as shown in the design files with `data-testid` as **banner**
-  - The Route should consist of an HTML image element with alt as **nxt watch logo** and src as the given Nxt Watch logo URL in the banner
-  - The HTML container element with `data-testid` as **home** should have the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#181818** color should be applied as a background color
-
-- **Trending Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **trending**
-  - The HTML container element with `data-testid` as **trending** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Gaming Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **gaming**
-  - The HTML container element with `data-testid` as **gaming** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Saved Videos Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **savedVideos**
-  - The HTML container element with `data-testid` as **savedVideos** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Video Item Details Route**
-
-  - The **Video Item Details** Route should consist of an HTML container element with `data-testid` as **videoItemDetails**
-  - The HTML container element with `data-testid` as **videoItemDetails** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- The **Website logos** for Light theme and Dark theme should have the alt as **website logo**
-- The **Failure** images for Light theme and Dark theme should have the alt as **failure view**
-- In the Video Item Details Route, the **#2563eb** color should be applied as `color` for any active button i.e (Like, Dislike, Save)
-- In the Video Item Details Route, the **#64748b** color should be applied as `color` for any inactive button i.e (Like, Dislike, Save)
-
-</details>
+- **Styled Components** is used for styling purposes
 
 ### Resources
 
@@ -540,9 +441,7 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png) alt should be **profile**
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png)
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png)
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png) alt should be **no videos**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png) alt should be **no saved videos**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png) alt as **not found**
+- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png) alt should be **no found**
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png) **banner background image**
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png) alt should be **facebook logo**
 - [https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png) alt should be **twitter logo**
